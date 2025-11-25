@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrocerías J&R | Más de 35 Años en el Mercado Peruano</title>
+
+     <!-- METADATOS CLAVE PARA SEO Y REDES SOCIALES -->
+    <meta name="description" content="Carrocerías J&R: 35+ años de experiencia fabricando carrocerías de alto rendimiento (Furgones, Tolvas, Camabajas) en Lima, Perú. Calidad, durabilidad y tradición." />
+    <meta name="keywords" content="carrocerías perú, carrocerías lima, furgones, tolvas, camabajas, carrocerías j&r, transporte de carga" />
+    <meta name="author" content="Carrocerías J&R" />
+
+    <!-- Open Graph Data (para Facebook, WhatsApp, etc.) -->
+    <meta property="og:title" content="Carrocerías J&R | Liderazgo y Resistencia en el Transporte Peruano" />
+    <meta property="og:description" content="Más de 35 años construyendo el movimiento: Furgones, Tolvas y Soluciones de Carga especializadas. ¡Solicita tu cotización hoy!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.carroceriasjyrenlinea.pe" /> <!-- Reemplazar con URL real -->
+    <meta property="og:image" content="https://placehold.co/1200x630/DC2626/ffffff?text=Carrocerias+J%26R" /> 
+    <!-- Fin de METADATOS -->
+
+    
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Animate On Scroll (AOS) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Carga de Font Awesome para Iconografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Configuración personalizada de Tailwind para colores -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jr-red': '#DC2626', // Rojo vibrante
+                        'jr-green': '#16A34A', // Verde fuerte
+                        'jr-dark': '#1F2937', // Gris oscuro para tipografía
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos para el diseño geométrico y de alto contraste (Swiss Style) */
+        .jr-border-green {
+            border-left: 8px solid #16A34A;
+        }
+        .jr-pattern {
+            background-color: #DC2626;
+            background-image: linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 75%, transparent 75%, transparent);
+            background-size: 20px 20px;
+        }
+        .text-shadow {
+            /* Sombra de texto más sutil para legibilidad en fondo oscuro */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+        /* CLASES PARA EL EFECTO INMERSIVO (Glow/Deep Shadow) */
+        .shadow-jr-glow {
+            /* Sombra profunda y un halo rojo */
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.7), 0 0 50px rgba(220, 38, 38, 0.5); 
+        }
+        .shadow-jr-green-glow {
+             /* Sombra profunda y un halo verde */
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.7), 0 0 50px rgba(22, 163, 74, 0.5);
+        }
+        .card-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ANIMACIÓN DE PULSO LENTO PARA EL CTA PRINCIPAL */
+        @keyframes pulse-slow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+            }
+            50% {
+                /* Simula el pulso expandiéndose y desapareciendo */
+                box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); 
+            }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-jr-dark">
+
+    <!-- BARRA DE NAVEGACIÓN (HEADER) - Totalmente responsiva y fija -->
+    <header class="bg-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo y Nombre de la Empresa -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-truck-ramp-box text-2xl sm:text-3xl text-jr-red"></i>
+                <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight text-jr-dark leading-none">
+                    CARROCERÍAS <span class="text-jr-green">J&R</span>
+                </h1>
+            </div>
+            
+            <!-- Contacto Principal (Visible en Desktop y móvil pequeño) -->
+            <a href="tel:+51960148415" class="flex items-center space-x-2 p-3 bg-jr-green text-white rounded-xl hover:bg-jr-red transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                <i class="fa-solid fa-phone-volume text-sm sm:text-base"></i>
+                <span class="font-bold text-xs sm:text-sm">+51 960 148 415</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO - DISEÑO SUIZO GEOMÉTRICO (Foco en el Contraste y Profundidad) -->
+    <section class="min-h-[70vh] flex items-center bg-gray-900 overflow-hidden relative border-b-8 border-jr-green">
+        <!-- Fondo con patrón de color fuerte -->
+        <div class="absolute inset-0 jr-pattern opacity-90"></div>
+        
+        <div class="container mx-auto px-4 py-16 sm:py-20 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Columna de Texto - Título Audaz -->
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <span class="text-jr-green text-md sm:text-xl font-semibold uppercase tracking-widest block mb-1">Liderazgo y Resistencia</span>
+                <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black uppercase text-white leading-tight sm:leading-none text-shadow">
+                    CONSTRUYENDO EL <span class="text-jr-red block">MOVIMIENTO</span>
+                </h2>
+                <p class="mt-4 sm:mt-6 text-lg sm:text-2xl text-gray-200 jr-border-green pl-4 font-medium">
+                    Más de 35 años de experiencia diseñando y fabricando carrocerías de alto rendimiento y durabilidad para el Perú y la región.
+                </p>
+                
+                <!-- GRUPO DE BOTONES CTA (Responsivo y Dinámico) -->
+                <div class="mt-8 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
+                    <!-- Botón Principal - Con Glow y Pulse -->
+                    <a href="#contacto" class="inline-block px-8 py-4 bg-jr-red text-white text-lg font-bold rounded-2xl shadow-jr-glow hover:bg-jr-green transform hover:scale-105 transition duration-500 uppercase tracking-wider animate-pulse-slow">
+                        Solicitar Cotización <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    
+                    <!-- Botón Secundario - Catálogo -->
+                    <a href="https://www.facebook.com/carroceriasintegradasa/photos_by" target="_blank" class="inline-block px-8 py-4 bg-white text-jr-dark text-lg font-bold rounded-2xl shadow-xl hover:bg-gray-200 transform hover:scale-105 transition duration-500 uppercase tracking-wider">
+                        Explora Nuestro Catálogo <i class="fa-solid fa-eye ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna de Redes Sociales (Inmersiva, sin rotación para estabilidad) -->
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="hidden md:block">
+                <div class="bg-white p-8 rounded-3xl shadow-2xl transition duration-700 border-4 border-jr-green/50">
+                    <h4 class="text-3xl font-extrabold text-center text-jr-dark mb-7">Síguenos y Descubre Nuestro Trabajo</h4>
+                    
+                    <div class="space-y-5">
+                        <!-- Facebook Button con efecto 3D -->
+                        <a href="https://www.facebook.com/carroceriasintegradasa" target="_blank" class="flex items-center justify-center w-full p-4 bg-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.03]">
+                            <i class="fab fa-facebook-f text-2xl mr-4"></i>
+                            <span class="text-lg">Facebook / @carroceriasintegradasa</span>
+                        </a>
+
+                        <!-- Instagram Button con efecto 3D -->
+                        <a href="https://www.instagram.com/carroceriasintegradassa/" target="_blank" class="flex items-center justify-center w-full p-4 bg-pink-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.03]">
+                            <i class="fab fa-instagram text-2xl mr-4"></i>
+                            <span class="text-lg">Instagram / @carroceriasintegradassa</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-8 text-center text-md text-gray-600 font-semibold">
+                        <i class="fa-solid fa-camera-retro mr-1 text-jr-red"></i> Explora la calidad que solo 35 años de experiencia pueden ofrecer.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE LEGADO (ABOUT) - Con Contraste -->
+    <section class="py-16 sm:py-20 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-8 sm:gap-12 items-center">
+                <!-- Título y Experiencia -->
+                <div class="lg:col-span-1" data-aos="fade-up">
+                    <h3 class="text-4xl sm:text-5xl font-extrabold text-jr-red border-b-4 border-jr-green pb-3 inline-block tracking-wide">
+                        Nuestro Legado
+                    </h3>
+                    <p class="mt-3 sm:mt-5 text-6xl sm:text-7xl font-black text-jr-dark leading-tight">
+                        35+ Años de <span class="text-jr-green">Compromiso</span>.
+                    </p>
+                </div>
+
+                <!-- Historia y Conexión -->
+                <div class="lg:col-span-2 text-base sm:text-lg text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    <p class="mb-4">
+                        Carrocerías J&R nace con el espíritu de una tradición de excelencia. Nuestro Gerente General trae consigo la trayectoria y el conocimiento forjado en la cuna de la industria de carrocerías en Lima, una experiencia vinculada íntimamente a las operaciones de la antigua Carrocerías Caisa.
+                    </p>
+                    <p>
+                        Esta herencia no es solo de antigüedad, sino de una filosofía de trabajo: calidad innegociable, procesos robustos y la dedicación total al cliente. En J&R, hemos modernizado esa tradición, combinando el rigor de la vieja escuela con la innovación técnica de la industria actual, para ofrecer soluciones de transporte que superan las expectativas en todo el Perú.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS Y SERVICIOS - Tarjetas con Efecto de Elevación -->
+    <section class="py-16 sm:py-20 bg-gray-100" id="servicios">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl sm:text-5xl font-extrabold text-center mb-10 sm:mb-16 text-jr-dark">
+                Nuestras <span class="text-jr-red">Especialidades</span>
+            </h3>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+                
+                <!-- Tarjeta 1: Carrocerías de Carga Seca -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-green border-2 border-transparent" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-box-open text-5xl text-jr-green mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Carrocerías Tipo Furgón / Carga Seca</h4>
+                    <p class="text-gray-600">Fabricación en aluminio y acero para el transporte seguro de mercancías generales y refrigeradas. Máxima ligereza y durabilidad.</p>
+                </div>
+                
+                <!-- Tarjeta 2: Tolvas Volcables (Dump Trucks) -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-red border-2 border-transparent" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-mountain-city text-5xl text-jr-red mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Tolvas y Volquetes (Rockeras)</h4>
+                    <p class="text-gray-600">Estructuras reforzadas para la minería y construcción. Diseño robusto para agregados, roca y materiales pesados.</p>
+                </div>
+                
+                <!-- Tarjeta 3: Gaviotas y Plataformas -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-green border-2 border-transparent" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-warehouse text-5xl text-jr-green mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Carrocerías Gaviota y Baranda</h4>
+                    <p class="text-gray-600">Soluciones de fácil acceso lateral para distribución, ideales para bebidas y paquetería. Flexibilidad de carga/descarga.</p>
+                </div>
+                
+                <!-- Tarjeta 4: Camabajas (Lowboy Trailers) -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-red border-2 border-transparent" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-road text-5xl text-jr-red mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Camabajas y Plataformas Extensibles</h4>
+                    <p class="text-gray-600">Equipos de alto tonelaje para transporte de maquinaria pesada y carga sobredimensionada en el sector industrial.</p>
+                </div>
+                
+                <!-- Tarjeta 5: Vehículos de Emergencia -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-green border-2 border-transparent" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fa-solid fa-truck-medical text-5xl text-jr-green mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Ambulancias y Unidades Especiales</h4>
+                    <p class="text-gray-600">Conversión y equipamiento de unidades médicas y vehículos para usos específicos, cumpliendo normativas.</p>
+                </div>
+
+                <!-- Tarjeta 6: Contenedores y Cajas Móviles -->
+                <div class="bg-white p-7 rounded-xl shadow-xl transition duration-500 card-lift hover:border-jr-red border-2 border-transparent" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fa-solid fa-box-tissue text-5xl text-jr-red mb-4"></i>
+                    <h4 class="text-2xl font-bold text-jr-dark mb-2">Contenedores y Cisternas</h4>
+                    <p class="text-gray-600">Diseño y fabricación de cisternas para agua, combustible o químicos, con certificaciones de seguridad.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y CITA A LA ACCIÓN (Foco en el Glow) -->
+    <section class="py-16 sm:py-20 bg-jr-dark text-white" id="contacto">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-10 sm:gap-16">
+                <!-- Formulario de Contacto (Mockup/Placeholder) -->
+                <div data-aos="fade-up" data-aos-offset="100">
+                    <h3 class="text-4xl font-extrabold text-jr-green mb-6">Contáctenos Ahora</h3>
+                    <p class="mb-6 text-lg text-gray-300">
+                        Cuéntenos sobre su proyecto. Un especialista se comunicará con usted de inmediato.
+                    </p>
+                    <form action="#" class="space-y-5 bg-gray-800 p-8 rounded-xl shadow-jr-glow/50 border-t-4 border-jr-green/50">
+                        <input type="text" placeholder="Su Nombre Completo" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-4 focus:ring-jr-red/50 focus:border-jr-red transition duration-300" required>
+                        <!-- Email eliminado por solicitud del usuario -->
+                        <textarea placeholder="Detalles de la Carrocería Requerida" rows="5" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:ring-4 focus:ring-jr-red/50 focus:border-jr-red transition duration-300" required></textarea>
+                        <button type="submit" class="w-full p-4 bg-jr-red text-white font-bold text-lg rounded-xl shadow-xl hover:bg-jr-green transition duration-300 uppercase transform hover:scale-[1.01] focus:ring-4 focus:ring-jr-red/70">
+                            Enviar Solicitud <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto Directo (Solo Teléfono y WhatsApp) -->
+                <div data-aos="fade-up" data-aos-offset="100" data-aos-delay="300">
+                    <h3 class="text-4xl font-extrabold text-jr-red mb-6">Líneas de Contacto</h3>
+                    
+                    <!-- Tarjeta de Contacto (Inmersiva) -->
+                    <div class="bg-white text-jr-dark p-8 rounded-xl shadow-2xl space-y-7 border-b-4 border-jr-red/50">
+                        <!-- Línea Directa -->
+                        <div class="flex items-start space-x-4">
+                            <i class="fa-solid fa-mobile-screen-button text-4xl text-jr-red mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">Línea Directa (Llamada)</h4>
+                                <a href="tel:+51960148415" class="text-3xl sm:text-4xl font-extrabold hover:text-jr-green transition">+51 960 148 415</a>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="flex items-start space-x-4">
+                            <i class="fab fa-whatsapp text-4xl text-jr-green mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-xl">WhatsApp (Mensaje)</h4>
+                                <a href="https://wa.me/51960148415" target="_blank" class="text-3xl sm:text-4xl font-extrabold hover:text-jr-red transition">+51 960 148 415</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Botón de WhatsApp Reforzado (Con Glow Verde) -->
+                    <a href="https://wa.me/51960148415" target="_blank" class="mt-10 block p-5 text-center bg-jr-green text-white text-2xl font-black rounded-xl shadow-jr-green-glow hover:bg-green-700 transition duration-500 transform hover:scale-[1.03]">
+                        <i class="fab fa-whatsapp mr-2"></i> INICIAR CHAT AHORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 py-6 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 Carrocerías J&R. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Carga de Animate On Scroll (AOS) JS y Inicialización -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1200, // Duración de la animación
+                once: true, // Solo animar una vez
+                easing: 'ease-in-out', // Suaviza la animación
+            });
+
+            // Lógica para desplazamiento suave (Smooth Scroll)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
