@@ -145,57 +145,66 @@
         </div>
     </header>
 
-    <!-- SECCIÓN HERO - DISEÑO SUIZO GEOMÉTRICO (Foco en el Contraste y Profundidad) -->
-    <section class="min-h-[70vh] flex items-center bg-gray-900 overflow-hidden relative border-b-8 border-jr-green">
-        <!-- Fondo con patrón de color fuerte -->
-        <div class="absolute inset-0 jr-pattern opacity-90"></div>
+
+    <!-- PORTADA -->
+   <section class="min-h-[75vh] flex items-center bg-gray-900 overflow-hidden relative border-b-8 border-jr-green">
         
-        <div class="container mx-auto px-4 py-16 sm:py-20 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-            <!-- Columna de Texto - Título Audaz -->
+        <video 
+            autoplay muted loop playsinline 
+            disablePictureInPicture 
+            controlsList="nodownload" 
+            class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 opacity-60">
+            <source src="/portada.mp4" type="video/mp4">
+        </video>
+
+        <div class="absolute inset-0 bg-gradient-to-r from-jr-dark via-jr-dark/70 to-transparent z-10"></div>
+        <div class="absolute inset-0 jr-pattern opacity-30 z-10"></div>
+        
+        <div class="container mx-auto px-4 py-16 sm:py-20 relative z-20 grid md:grid-cols-2 gap-12 items-center">
+            
             <div data-aos="fade-right" data-aos-duration="1000">
-                <span class="text-jr-green text-md sm:text-xl font-semibold uppercase tracking-widest block mb-1">Liderazgo y Resistencia</span>
+                <span class="text-jr-green text-md sm:text-xl font-bold uppercase tracking-widest block mb-2 bg-black/40 inline-block px-2 rounded">Liderazgo y Resistencia</span>
                 <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black uppercase text-white leading-tight sm:leading-none text-shadow">
                     CONSTRUYENDO EL <span class="text-jr-red block">MOVIMIENTO</span>
                 </h2>
-                <p class="mt-4 sm:mt-6 text-lg sm:text-2xl text-gray-200 jr-border-green pl-4 font-medium">
-                    Más de 35 años de experiencia diseñando y fabricando carrocerías de alto rendimiento y durabilidad para el Perú y la región.
+                <p class="mt-4 sm:mt-6 text-lg sm:text-2xl text-gray-200 jr-border-green pl-4 font-medium max-w-xl">
+                    Más de 35 años de experiencia diseñando y fabricando carrocerías de alto rendimiento para los caminos más exigentes del Perú.
                 </p>
                 
-                <!-- GRUPO DE BOTONES CTA (Responsivo y Dinámico) -->
-                <div class="mt-8 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
-                    <!-- Botón Principal - Con Glow y Pulse -->
-                    <a href="#contacto" class="inline-block px-8 py-4 bg-jr-red text-white text-lg font-bold rounded-2xl shadow-jr-glow hover:bg-jr-green transform hover:scale-105 transition duration-500 uppercase tracking-wider animate-pulse-slow">
-                        Solicitar Cotización <i class="fa-solid fa-arrow-right ml-2"></i>
+                <div class="mt-10 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
+                    <a href="#contacto" class="inline-block px-10 py-5 bg-jr-red text-white text-xl font-extrabold rounded-2xl shadow-jr-glow hover:bg-jr-green transform hover:scale-105 transition duration-500 uppercase tracking-wider animate-pulse-slow text-center">
+                        Cotizar por WhatsApp <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
-                    
-                    <!-- Botón Secundario - Catálogo -->
-                    <a href="https://www.facebook.com/carroceriasintegradasa/photos_by" target="_blank" class="inline-block px-8 py-4 bg-white text-jr-dark text-lg font-bold rounded-2xl shadow-xl hover:bg-gray-200 transform hover:scale-105 transition duration-500 uppercase tracking-wider">
-                        Explora Nuestro Catálogo <i class="fa-solid fa-eye ml-2"></i>
+                    <a href="https://www.facebook.com/carroceriasintegradasa/photos_by" target="_blank" class="inline-block px-10 py-5 bg-white/10 backdrop-blur-md text-white border-2 border-white/30 text-xl font-extrabold rounded-2xl shadow-xl hover:bg-white hover:text-jr-dark transform hover:scale-105 transition duration-500 uppercase tracking-wider text-center">
+                        Catálogo <i class="fa-solid fa-eye ml-2"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Columna de Redes Sociales (Inmersiva, sin rotación para estabilidad) -->
             <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="hidden md:block">
-                <div class=" ">
-                    <h4 class="text-3xl font-extrabold text-center text-jr-dark mb-7 text-white">Síguenos y Descubre Nuestro Trabajo</h4>
+                <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2rem] border border-white/20 shadow-2xl">
+                    <h4 class="text-3xl font-black text-center text-white mb-8">SÍGUENOS EN VIVO</h4>
                     
-                    <div class="space-y-5">
-                        <!-- Facebook Button con efecto 3D -->
-                        <a href="https://www.facebook.com/carroceriasintegradasa" target="_blank" class="flex items-center justify-center w-full p-4 bg-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.03]">
-                            <i class="fab fa-facebook-f text-2xl mr-4"></i>
-                            <span class="text-lg">Facebook / @carroceriasintegradasa</span>
+                    <div class="space-y-6">
+                        <a href="https://www.facebook.com/carroceriasintegradasa" target="_blank" class="flex items-center justify-between w-full p-5 bg-blue-600/90 text-white font-bold rounded-2xl shadow-lg hover:bg-blue-700 transition duration-300 transform hover:translate-x-2">
+                            <div class="flex items-center">
+                                <i class="fab fa-facebook-f text-2xl mr-4"></i>
+                                <span class="text-xl">Facebook</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
 
-                        <!-- Instagram Button con efecto 3D -->
-                        <a href="https://www.instagram.com/carroceriasintegradassa/" target="_blank" class="flex items-center justify-center w-full p-4 bg-pink-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.03]">
-                            <i class="fab fa-instagram text-2xl mr-4"></i>
-                            <span class="text-lg ">Instagram / @carroceriasintegradassa</span>
+                        <a href="https://www.instagram.com/carroceriasintegradassa/" target="_blank" class="flex items-center justify-between w-full p-5 bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 text-white font-bold rounded-2xl shadow-lg hover:opacity-90 transition duration-300 transform hover:translate-x-2">
+                            <div class="flex items-center">
+                                <i class="fab fa-instagram text-2xl mr-4"></i>
+                                <span class="text-xl">Instagram</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </div>
 
-                    <div class="mt-8 text-center text-md text-gray-600 font-semibold text-white">
-                        <i class="fa-solid fa-camera-retro mr-1 text-jr-red text-white"></i> Explora la calidad que solo 35 años de experiencia pueden ofrecer.
+                    <div class="mt-10 text-center text-gray-300 font-medium italic">
+                        <i class="fa-solid fa-video mr-2 text-jr-red"></i> Mira nuestros proyectos en fabricación.
                     </div>
                 </div>
             </div>
