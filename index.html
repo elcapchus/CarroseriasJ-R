@@ -126,24 +126,23 @@
 </head>
 <body class="bg-gray-50 font-sans text-jr-dark">
 
-    <!-- BARRA DE NAVEGACIÓN (HEADER) - Totalmente responsiva y fija -->
-    <header class="bg-white shadow-xl sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo y Nombre de la Empresa -->
-            <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-truck-ramp-box text-2xl sm:text-3xl text-jr-red"></i>
-                <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight text-jr-dark leading-none">
-                    CARROCERÍAS <span class="text-jr-green">J&R</span>
-                </h1>
+    <!-- BARRA DE NAVEGACIÓN -->
+        <header class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-truck-ramp-box text-2xl sm:text-3xl text-jr-red"></i>
+                    <h1 class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight text-jr-dark leading-none">
+                        CARROCERÍAS <span class="text-jr-green">J&R</span>
+                    </h1>
+                </div>
+                
+                <a href="tel:+51960148415" class="flex items-center space-x-2 p-2 sm:p-3 bg-jr-green text-white rounded-xl hover:bg-jr-red transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
+                    <i class="fa-solid fa-phone-volume text-sm sm:text-base"></i>
+                    <span class="font-bold text-xs sm:text-sm hidden sm:inline">+51 960 148 415</span>
+                    <span class="font-bold text-xs sm:hidden">Llamar</span>
+                </a>
             </div>
-            
-            <!-- Contacto Principal (Visible en Desktop y móvil pequeño) -->
-            <a href="tel:+51960148415" class="flex items-center space-x-2 p-3 bg-jr-green text-white rounded-xl hover:bg-jr-red transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                <i class="fa-solid fa-phone-volume text-sm sm:text-base"></i>
-                <span class="font-bold text-xs sm:text-sm">+51 960 148 415</span>
-            </a>
-        </div>
-    </header>
+        </header>
 
 
     <!-- PORTADA -->
@@ -212,28 +211,36 @@
 
     
 
-    <!-- SECCIÓN DE LEGADO (ABOUT) - Con Contraste -->
-    <section class="py-16 sm:py-20 bg-white border-b border-gray-200">
+ <!-- SECCIÓN DE LEGADO (ABOUT) -->
+    <section class="py-12 sm:py-20 bg-white border-b border-gray-200 overflow-hidden">
         <div class="container mx-auto px-4">
             <div class="grid lg:grid-cols-3 gap-8 sm:gap-12 items-center">
-                <!-- Título y Experiencia -->
                 <div class="lg:col-span-1" data-aos="fade-up">
-                    <h3 class="text-4xl sm:text-5xl font-extrabold text-jr-red border-b-4 border-jr-green pb-3 inline-block tracking-wide">
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-jr-red border-b-4 border-jr-green pb-3 inline-block tracking-wide">
                         Nuestro Legado
                     </h3>
-                    <p class="mt-3 sm:mt-5 text-6xl sm:text-7xl font-black text-jr-dark leading-tight">
+                    <p class="mt-4 sm:mt-5 text-4xl sm:text-5xl md:text-6xl font-black text-jr-dark leading-snug">
                         35+ Años de <span class="text-jr-green">Compromiso</span>.
                     </p>
                 </div>
 
-                <!-- Historia y Conexión -->
                 <div class="lg:col-span-2 text-base sm:text-lg text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-                    <p class="mb-4">
-                        Carrocerías J&R nace con el espíritu de una tradición de excelencia. Nuestro Gerente General trae consigo la trayectoria y el conocimiento forjado en la cuna de la industria de carrocerías en Lima, una experiencia vinculada íntimamente a las operaciones de la antigua Carrocerías Caisa.
+                    
+                    <!-- Resumen para móviles (solo visible en pantallas pequeñas) -->
+                    <p class="block sm:hidden">
+                        Nacemos con la tradición de excelencia de la antigua Carrocerías Caisa. Combinamos la calidad innegociable de la vieja escuela con la innovación técnica actual, ofreciendo soluciones de transporte duraderas que superan las expectativas en todo el Perú.
                     </p>
-                    <p>
-                        Esta herencia no es solo de antigüedad, sino de una filosofía de trabajo: calidad innegociable, procesos robustos y la dedicación total al cliente. En J&R, hemos modernizado esa tradición, combinando el rigor de la vieja escuela con la innovación técnica de la industria actual, para ofrecer soluciones de transporte que superan las expectativas en todo el Perú.
-                    </p>
+
+                    <!-- Texto completo para Desktop y Tablets (oculto en móviles) -->
+                    <div class="hidden sm:block space-y-4">
+                        <p>
+                            Carrocerías J&R nace con el espíritu de una tradición de excelencia. Nuestro Gerente General trae consigo la trayectoria y el conocimiento forjado en la cuna de la industria de carrocerías en Lima, una experiencia vinculada íntimamente a las operaciones de la antigua Carrocerías Caisa.
+                        </p>
+                        <p>
+                            Esta herencia no es solo de antigüedad, sino de una filosofía de trabajo: calidad innegociable, procesos robustos y la dedicación total al cliente. En J&R, hemos modernizado esa tradición, combinando el rigor de la vieja escuela con la innovación técnica de la industria actual, para ofrecer soluciones de transporte que superan las expectativas en todo el Perú.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
